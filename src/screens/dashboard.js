@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import CustomLoader from "./components/loader";
 
@@ -105,7 +105,7 @@ function Dashboard(props) {
 
                         {
                             !isLogin ? 
-                            <Link href="/login" style={{ color: "white" }}>
+                            <Link to="/login" style={{ color: "white" }}>
                              <Button color="inherit">Login</Button>
                            </Link>
                            :                           

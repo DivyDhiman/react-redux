@@ -1,11 +1,11 @@
 .App {
-  text-align: center;
+  padding-top: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Spin {
+  animation: App-logo-spin infinite 2s linear;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +13,56 @@
   }
 }
 
+
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .custom {
+    width: 320px !important;
+  }
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  background-color: var(--secondary);
+  padding: 20px;
   color: white;
+  border-radius: 0.3rem;
+  background-color: #165FC7;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-intro {
+  font-size: large;
+}
+
+.Dashboard-header{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+
+}
+
+.Dashboard-Detail{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+
+}
+.Dashboard-Detail-Comments{
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
